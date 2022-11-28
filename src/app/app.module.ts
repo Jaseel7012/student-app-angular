@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentViewAllComponent } from './student-view-all/student-view-all.component';
 import { StudentSearchComponent } from './student-search/student-search.component';
+import { StudentDeleteComponent } from './student-delete/student-delete.component';
 const myroute:Routes=[
   {
     path:'',
@@ -17,13 +18,18 @@ const myroute:Routes=[
   },{
     path:'search',
     component:StudentSearchComponent
+  },
+  {
+    path:'delete',
+    component:StudentDeleteComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     StudentViewAllComponent,
-    StudentSearchComponent
+    StudentSearchComponent,
+    StudentDeleteComponent
   ],
   imports: [
     BrowserModule,
