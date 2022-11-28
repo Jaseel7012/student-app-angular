@@ -5,6 +5,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { StudentEntryComponent } from './student-entry/student-entry.component';
 import { StudentViewAllComponent } from './student-view-all/student-view-all.component';
+import { StudentSearchComponent } from './student-search/student-search.component';
 const myroute:Routes=[
   {
     path:'',
@@ -13,12 +14,16 @@ const myroute:Routes=[
   {
     path:'view',
     component:StudentViewAllComponent
+  },{
+    path:'search',
+    component:StudentSearchComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    StudentViewAllComponent
+    StudentViewAllComponent,
+    StudentSearchComponent
   ],
   imports: [
     BrowserModule,
